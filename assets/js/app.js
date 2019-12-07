@@ -13,7 +13,7 @@ function handleListCreate() {
 
 function handleCardCreate(event) {
   var $listContainer = event.target.parentNode;
-  var listId = $listContainer.getAttribute('data-id');
+  var listId = Number($listContainer.getAttribute('data-id'));
 
   var cardText = prompt('New card text') || '';
 
